@@ -131,7 +131,7 @@ class Payment
     {
         foreach ($attributes as $name => $value)
         {
-            $this->setAttribute($name, $value);
+            $this->setAttribute($name, $name);
         }
     }
 
