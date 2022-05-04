@@ -11,8 +11,8 @@ class CashBill
     /**
      * Available endpoints.
      */
-    const ENDPOINT_LIVE = 'https://pay.cashbill.pl/ws/rest';
-    const ENDPOINT_SANDBOX = 'https://pay.cashbill.pl/testws/rest';
+    const ENDPOINT_LIVE = 'https://pay.cashbill.pl/ws/rest/';
+    const ENDPOINT_SANDBOX = 'https://pay.cashbill.pl/testws/rest/';
 
     /**
      * Languages supported by provider.
