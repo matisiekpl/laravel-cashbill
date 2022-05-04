@@ -154,7 +154,7 @@ class Payment
     {
         $payload = '';
 
-        foreach ($this->fillable as $name)
+        foreach ($this->fillable as $key => $name)
         {
             $payload .= $this->getAttribute($name);
         }
