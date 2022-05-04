@@ -131,7 +131,7 @@ class Payment
     {
         foreach ($attributes as $name => $value)
         {
-            $this->setAttribute($name, $name);
+            $this->setAttribute($name, $value);
         }
     }
 
@@ -156,7 +156,7 @@ class Payment
 
         foreach ($this->fillable as $key => $name)
         {
-            $payload .= $this->getAttribute($name);
+            $payload .= $this->getAttribute($key);
         }
 
         return $payload;
