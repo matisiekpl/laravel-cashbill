@@ -241,7 +241,8 @@ class CashBill
             ($method == 'post' ? 'form_params' : 'query') => $params 
         ]);
 
-        $content = $response->getBody()->getContent();
+        //$content = $response->getBody()->getContent();
+        $content = $response->getBody(true);
 
         if ($response->getStatusCode() != 200) {
             throw new ResponseException("CashBill error: $content");
